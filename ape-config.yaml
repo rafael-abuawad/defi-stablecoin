@@ -1,1 +1,19 @@
 name: defi-stablecoin
+
+plugins:
+  - name: solidity
+  - name: foundry
+
+dependencies:
+  - name: OpenZeppelin
+    github: OpenZeppelin/openzeppelin-contracts
+    version: 5.0.2
+  - name: smartcontractkit
+    github: smartcontractkit/chainlink-brownie-contracts
+    version: 0.8.0
+
+solidity:
+  version: 0.8.20
+  import_remapping:
+    - "@openzeppelin/contracts=OpenZeppelin/5.0.2"
+    - "@chainlink/contracts=smartcontractkit/0.8.0"
