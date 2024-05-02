@@ -3,6 +3,7 @@ name: defi-stablecoin
 plugins:
   - name: solidity
   - name: foundry
+  - name: etherscan
 
 dependencies:
   - name: OpenZeppelin
